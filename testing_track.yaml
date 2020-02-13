@@ -1,0 +1,22 @@
+# This is a testing track
+
+tiles:
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+- [4way, 4way, 4way, 4way, 4way, 4way, 4way, 4way]
+
+objects:
+
+- kind: tree
+  pos: [0, 0]
+  rotate: 180
+  height: 0.25
+  optional: false
+
+start_tile: [3.5, 3.5]
+
+tile_size: 0.585
