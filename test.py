@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-Simple exercise to construct a controller that controls the simulated Duckiebot using pose.
-"""
-
 import os
 import time
 import sys
@@ -46,7 +42,7 @@ env = wrappers.Monitor(env, os.getcwd() + 'gym-duckietown/results/' + type + '/'
 obs = env.reset()
 env.render()
 
-while env.step_count < 50:
+while env.step_count < 1500:
 
     if env.cur_angle >= start_angle + 6.28319:
         steering = -0.5
