@@ -16,11 +16,10 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
 
 RUN git clone git://github.com/duckietown/gym-duckietown.git
 
-COPY requirements.txt /
 COPY test.py wakeup.sh /gym-duckietown/
 COPY testing_track.yaml /gym-duckietown/gym_duckietown/maps/
 
-RUN pip install -r requirements.txt
+RUN pip install -r /gym-duckietown/requirements.txt
 
 RUN chmod a+x gym-duckietown/wakeup.sh
 CMD gym-duckietown/wakeup.sh
